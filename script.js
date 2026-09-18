@@ -1,84 +1,84 @@
-// Banco de perguntas sobre IA na escola
+// Banco de perguntas sobre Ana Castela
 const quizData = [
   {
-    question: "O que significa a sigla 'IA'?",
+    question: "Qual é o nome completo de Ana Castela?",
     options: [
-      "Inteligência Analógica",
-      "Inteligência Artificial",
-      "Interação Automatizada",
-      "Informática Aplicada"
-    ],
-    answer: 1
-  },
-  {
-    question: "Qual ferramenta de IA pode ajudar a criar resumos de textos escolares?",
-    options: [
-      "ChatGPT",
-      "Microsoft Word",
-      "Google Maps",
-      "Calculadora"
+      "Ana Flávia Castela",
+      "Ana Castela Benevides",
+      "Ana Gabriela Castela",
+      "Ana Luiza Castela"
     ],
     answer: 0
   },
   {
-    question: "Na escola, a IA pode ser usada para:",
+    question: "Qual é o apelido artístico pelo qual Ana Castela é conhecida?",
     options: [
-      "Substituir completamente os professores",
-      "Criar atividades personalizadas para alunos",
-      "Impedir o acesso à internet",
-      "Corrigir provas sem critério algum"
-    ],
-    answer: 1
-  },
-  {
-    question: "Qual dessas é uma preocupação ética no uso de IA na educação?",
-    options: [
-      "A IA deixar os alunos mais inteligentes",
-      "A privacidade dos dados dos estudantes",
-      "O excesso de lições de casa",
-      "A velocidade da internet"
-    ],
-    answer: 1
-  },
-  {
-    question: "O que é 'aprendizado de máquina' (machine learning)?",
-    options: [
-      "Um tipo de máquina de escrever moderna",
-      "Um ramo da IA que permite sistemas aprenderem com dados",
-      "Um jogo educativo",
-      "Um método de ensino tradicional"
-    ],
-    answer: 1
-  },
-  {
-    question: "Como a IA pode auxiliar alunos com dificuldades de aprendizagem?",
-    options: [
-      "Oferecendo tutoria personalizada e adaptativa",
-      "Dando notas mais altas automaticamente",
-      "Fazendo a lição por eles",
-      "Ignorando suas necessidades"
+      "Boiadeira",
+      "Rainha do Sertão",
+      "Princesa do Rodeio",
+      "Garota do Agro"
     ],
     answer: 0
   },
   {
-    question: "Qual é um exemplo de IA generativa?",
+    question: "Qual gênero musical está fortemente associado à carreira de Ana Castela?",
     options: [
-      "DALL-E (gerador de imagens)",
-      "Excel",
-      "Windows",
-      "Google Chrome"
+      "Rock",
+      "Sertanejo",
+      "Funk",
+      "Reggae"
+    ],
+    answer: 1
+  },
+  {
+    question: "Em qual estado brasileiro Ana Castela nasceu?",
+    options: [
+      "Paraná",
+      "São Paulo",
+      "Mato Grosso do Sul",
+      "Goiás"
+    ],
+    answer: 2
+  },
+  {
+    question: "Qual destas músicas é conhecida por ser de Ana Castela?",
+    options: [
+      "Nosso Quadro",
+      "Evidências",
+      "Faroeste Caboclo",
+      "Tempo Perdido"
     ],
     answer: 0
   },
   {
-    question: "O uso responsável da IA na escola envolve:",
+    question: "Qual tema aparece com frequência na imagem artística de Ana Castela?",
     options: [
-      "Copiar respostas da IA sem citar",
-      "Usar como ferramenta de apoio, mantendo o pensamento crítico",
-      "Deixar a IA tomar todas as decisões",
-      "Proibir qualquer tecnologia"
+      "Universo medieval",
+      "Vida no campo e cultura sertaneja",
+      "Ficção científica",
+      "Música clássica europeia"
     ],
     answer: 1
+  },
+  {
+    question: "Ana Castela ficou conhecida nacionalmente principalmente por sua atuação em qual área?",
+    options: [
+      "Cinema",
+      "Literatura",
+      "Música",
+      "Jornalismo"
+    ],
+    answer: 2
+  },
+  {
+    question: "Qual destas características combina com o estilo visual associado à Ana Castela?",
+    options: [
+      "Estilo country e boiadeira",
+      "Estilo gótico medieval",
+      "Estilo exclusivamente clássico",
+      "Estilo futurista"
+    ],
+    answer: 0
   }
 ];
 
@@ -122,7 +122,7 @@ function loadQuestion() {
     const button = document.createElement('button');
     button.classList.add('option');
     button.setAttribute('data-index', index);
-    
+
     button.innerHTML = `
       <span class="option-letter">${letters[index]}</span>
       <span>${option}</span>
@@ -143,6 +143,7 @@ function selectOption(selectedIndex, selectedButton) {
   const isCorrect = selectedIndex === currentQuestion.answer;
 
   const allOptions = document.querySelectorAll('.option');
+
   allOptions.forEach(btn => {
     btn.classList.add('disabled');
     btn.disabled = true;
@@ -151,10 +152,12 @@ function selectOption(selectedIndex, selectedButton) {
   if (isCorrect) {
     selectedButton.classList.add('correct');
     score++;
-    feedbackMessage.textContent = '✅ Resposta correta! Muito bem!';
+    feedbackMessage.textContent = '✅ Resposta correta! Você é uma verdadeira boiadeira! 🤠';
   } else {
     selectedButton.classList.add('wrong');
-    feedbackMessage.textContent = `❌ Resposta incorreta. A resposta certa é: ${currentQuestion.options[currentQuestion.answer]}`;
+    feedbackMessage.textContent =
+      `❌ Resposta incorreta. A resposta certa é: ${currentQuestion.options[currentQuestion.answer]}`;
+
     allOptions[currentQuestion.answer].classList.add('correct');
   }
 
@@ -176,9 +179,10 @@ function nextQuestion() {
 function showResult() {
   quizArea.classList.add('hidden');
   resultScreen.classList.remove('hidden');
-  
+
   const totalQuestions = quizData.length;
-  scoreText.textContent = `Você acertou ${score} de ${totalQuestions} perguntas!`;
+  scoreText.textContent =
+    `Você acertou ${score} de ${totalQuestions} perguntas sobre Ana Castela! 🤠`;
 
   progressBar.style.width = '100%';
 }
@@ -199,14 +203,16 @@ function restartQuiz() {
 
 function toggleTheme() {
   document.body.classList.toggle('dark-theme');
+
   const isDark = document.body.classList.contains('dark-theme');
-  
-  // Atualizar ícone
+
   themeIcon.textContent = isDark ? '☀️' : '🌙';
-  
-  // Salvar preferência
+
   try {
-    localStorage.setItem('quizIA-theme', isDark ? 'dark' : 'light');
+    localStorage.setItem(
+      'quizAnaCastela-theme',
+      isDark ? 'dark' : 'light'
+    );
   } catch (e) {
     // localStorage pode não estar disponível
   }
@@ -214,7 +220,8 @@ function toggleTheme() {
 
 function loadSavedTheme() {
   try {
-    const savedTheme = localStorage.getItem('quizIA-theme');
+    const savedTheme = localStorage.getItem('quizAnaCastela-theme');
+
     if (savedTheme === 'dark') {
       document.body.classList.add('dark-theme');
       themeIcon.textContent = '☀️';
