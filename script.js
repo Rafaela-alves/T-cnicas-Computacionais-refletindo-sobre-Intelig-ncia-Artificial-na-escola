@@ -1,243 +1,103 @@
-// Banco de perguntas sobre Ana Castela
+// Banco de perguntas sobre o Holocausto
 const quizData = [
   {
-    question: "Qual é o nome completo de Ana Castela?",
+    question: "Considerando o contexto político e social da Europa durante a ascensão do nazismo, qual alternativa melhor explica como o regime de Adolf Hitler conseguiu transformar o antissemitismo em uma política sistemática de perseguição?",
     options: [
-      "Ana Flávia Castela",
-      "Ana Castela Benevides",
-      "Ana Gabriela Castela",
-      "Ana Luiza Castela"
+      "Por meio de leis, propaganda estatal, exclusão social e medidas que retiravam progressivamente os direitos da população judaica",
+      "Apenas por meio de conflitos militares entre diferentes países europeus",
+      "Principalmente por meio de acordos econômicos estabelecidos com comunidades judaicas",
+      "Por meio de uma política que garantia igualdade jurídica entre todos os grupos étnicos"
     ],
-    answer: 0
+    answer: "Por meio de leis, propaganda estatal, exclusão social e medidas que retiravam progressivamente os direitos da população judaica"
   },
   {
-    question: "Qual é o apelido artístico pelo qual Ana Castela é conhecida?",
+    question: "As Leis de Nuremberg, promulgadas em 1935 na Alemanha nazista, representaram uma importante etapa na perseguição aos judeus. Qual foi uma de suas principais consequências?",
     options: [
-      "Boiadeira",
-      "Rainha do Sertão",
-      "Princesa do Rodeio",
-      "Garota do Agro"
+      "A ampliação dos direitos políticos da população judaica",
+      "A definição legal de categorias raciais e a retirada de diversos direitos dos judeus alemães",
+      "A criação de um sistema democrático para combater o antissemitismo",
+      "A concessão de cidadania plena a todas as minorias perseguidas"
     ],
-    answer: 0
+    answer: "A definição legal de categorias raciais e a retirada de diversos direitos dos judeus alemães"
   },
   {
-    question: "Qual gênero musical está fortemente associado à carreira de Ana Castela?",
+    question: "A propaganda nazista teve um papel importante na consolidação do regime e na perseguição de grupos considerados inimigos. Qual era uma de suas principais funções no contexto do Holocausto?",
     options: [
-      "Rock",
-      "Sertanejo",
-      "Funk",
-      "Reggae"
+      "Promover o pensamento crítico sobre as políticas do governo",
+      "Apresentar informações imparciais sobre as minorias europeias",
+      "Difundir ideias antissemitas e desumanizar determinados grupos para justificar sua perseguição",
+      "Defender a liberdade religiosa e cultural das populações perseguidas"
     ],
-    answer: 1
+    answer: "Difundir ideias antissemitas e desumanizar determinados grupos para justificar sua perseguição"
   },
   {
-    question: "Em qual estado brasileiro Ana Castela nasceu?",
+    question: "O que significa o termo 'Holocausto' no contexto da História do século XX?",
     options: [
-      "Paraná",
-      "São Paulo",
-      "Mato Grosso do Sul",
-      "Goiás"
+      "O período de reconstrução econômica da Europa após a Segunda Guerra Mundial",
+      "A perseguição e o assassinato sistemático de aproximadamente seis milhões de judeus pelos nazistas e seus colaboradores, além da perseguição de outros grupos",
+      "A divisão política da Alemanha após o fim da Segunda Guerra Mundial",
+      "A expansão territorial dos países aliados durante o conflito"
     ],
-    answer: 2
+    answer: "A perseguição e o assassinato sistemático de aproximadamente seis milhões de judeus pelos nazistas e seus colaboradores, além da perseguição de outros grupos"
   },
   {
-    question: "Qual destas músicas é conhecida por ser de Ana Castela?",
+    question: "Os guetos estabelecidos pelos nazistas em diferentes territórios ocupados durante a Segunda Guerra Mundial tinham como uma de suas principais finalidades:",
     options: [
-      "Nosso Quadro",
-      "Evidências",
-      "Faroeste Caboclo",
-      "Tempo Perdido"
+      "Oferecer novas oportunidades econômicas às comunidades judaicas",
+      "Concentrar e isolar populações judaicas, submetendo-as a condições extremamente precárias e facilitando posteriormente sua deportação",
+      "Criar regiões independentes administradas democraticamente pelos judeus",
+      "Proteger as comunidades judaicas de perseguições realizadas por outros países"
     ],
-    answer: 0
+    answer: "Concentrar e isolar populações judaicas, submetendo-as a condições extremamente precárias e facilitando posteriormente sua deportação"
   },
   {
-    question: "Qual tema aparece com frequência na imagem artística de Ana Castela?",
+    question: "A chamada 'Solução Final' representou uma mudança decisiva na política nazista contra os judeus europeus. Historicamente, o termo se refere:",
     options: [
-      "Universo medieval",
-      "Vida no campo e cultura sertaneja",
-      "Ficção científica",
-      "Música clássica europeia"
+      "Ao plano de reconstrução das cidades alemãs depois da guerra",
+      "À política de emigração voluntária de judeus para outros continentes",
+      "Ao projeto nazista de assassinato sistemático da população judaica da Europa",
+      "Ao acordo diplomático que encerrou a Segunda Guerra Mundial"
     ],
-    answer: 1
+    answer: "Ao projeto nazista de assassinato sistemático da população judaica da Europa"
   },
   {
-    question: "Ana Castela ficou conhecida nacionalmente principalmente por sua atuação em qual área?",
+    question: "Os campos de concentração e os centros de extermínio desempenharam papéis diferentes dentro do sistema de perseguição nazista. Qual alternativa apresenta uma distinção historicamente adequada?",
     options: [
-      "Cinema",
-      "Literatura",
-      "Música",
-      "Jornalismo"
+      "Os campos de concentração eram exclusivamente destinados a soldados aliados, enquanto os centros de extermínio eram prisões comuns",
+      "Os campos de concentração eram utilizados para aprisionamento e exploração de prisioneiros, enquanto centros de extermínio foram criados principalmente para realizar assassinatos em massa",
+      "Ambos tinham exatamente a mesma finalidade e funcionavam exclusivamente como campos militares",
+      "Os centros de extermínio foram criados pelos Aliados durante os últimos meses da guerra"
     ],
-    answer: 2
+    answer: "Os campos de concentração eram utilizados para aprisionamento e exploração de prisioneiros, enquanto centros de extermínio foram criados principalmente para realizar assassinatos em massa"
   },
   {
-    question: "Qual destas características combina com o estilo visual associado à Ana Castela?",
+    question: "Por que Auschwitz-Birkenau se tornou um dos principais símbolos históricos do Holocausto?",
     options: [
-      "Estilo country e boiadeira",
-      "Estilo gótico medieval",
-      "Estilo exclusivamente clássico",
-      "Estilo futurista"
+      "Porque foi o principal quartel-general militar dos Aliados durante a Segunda Guerra Mundial",
+      "Porque funcionou como parte do complexo de campos nazistas e tornou-se um dos locais mais conhecidos associados ao assassinato em massa de judeus e de outros prisioneiros",
+      "Porque foi o local onde ocorreu a assinatura do tratado que encerrou a guerra",
+      "Porque foi utilizado exclusivamente como hospital para soldados alemães"
     ],
-    answer: 0
+    answer: "Porque funcionou como parte do complexo de campos nazistas e tornou-se um dos locais mais conhecidos associados ao assassinato em massa de judeus e de outros prisioneiros"
+  },
+  {
+    question: "Além dos judeus, diversos outros grupos foram perseguidos pelo regime nazista. Qual alternativa apresenta grupos que também foram alvo de perseguição e violência?",
+    options: [
+      "Somente militares britânicos e franceses",
+      "Roma e Sinti, pessoas com deficiência, prisioneiros políticos, homossexuais e outros grupos considerados inimigos ou indesejáveis pelo regime",
+      "Exclusivamente membros do Partido Nazista",
+      "Apenas comerciantes estrangeiros que viviam na Alemanha"
+    ],
+    answer: "Roma e Sinti, pessoas com deficiência, prisioneiros políticos, homossexuais e outros grupos considerados inimigos ou indesejáveis pelo regime"
+  },
+  {
+    question: "Ao estudar o Holocausto, por que os historiadores consideram importante analisar documentos, testemunhos de sobreviventes, fotografias e registros produzidos durante o período?",
+    options: [
+      "Porque essas fontes permitem compreender diferentes aspectos da perseguição e confrontar tentativas posteriores de negar ou distorcer acontecimentos historicamente documentados",
+      "Porque apenas fotografias podem ser consideradas fontes históricas confiáveis",
+      "Porque os testemunhos substituem completamente a análise de documentos oficiais",
+      "Porque esses materiais foram produzidos exclusivamente depois da guerra"
+    ],
+    answer: "Porque essas fontes permitem compreender diferentes aspectos da perseguição e confrontar tentativas posteriores de negar ou distorcer acontecimentos historicamente documentados"
   }
 ];
-
-// Variáveis de controle
-let currentQuestionIndex = 0;
-let score = 0;
-let answered = false;
-
-// Elementos do DOM
-const questionText = document.getElementById('questionText');
-const optionsContainer = document.getElementById('optionsContainer');
-const feedbackMessage = document.getElementById('feedbackMessage');
-const nextButton = document.getElementById('nextButton');
-const progressBar = document.getElementById('progressBar');
-const quizArea = document.getElementById('quizArea');
-const resultScreen = document.getElementById('resultScreen');
-const scoreText = document.getElementById('scoreText');
-const restartButton = document.getElementById('restartButton');
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon = themeToggle.querySelector('.theme-icon');
-
-// ============ FUNÇÕES DO QUIZ ============
-
-function updateProgress() {
-  const progress = ((currentQuestionIndex + 1) / quizData.length) * 100;
-  progressBar.style.width = `${progress}%`;
-}
-
-function loadQuestion() {
-  answered = false;
-  nextButton.disabled = true;
-  feedbackMessage.textContent = '';
-
-  const currentQuestion = quizData[currentQuestionIndex];
-  questionText.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
-
-  optionsContainer.innerHTML = '';
-  const letters = ['A', 'B', 'C', 'D'];
-
-  currentQuestion.options.forEach((option, index) => {
-    const button = document.createElement('button');
-    button.classList.add('option');
-    button.setAttribute('data-index', index);
-
-    button.innerHTML = `
-      <span class="option-letter">${letters[index]}</span>
-      <span>${option}</span>
-    `;
-
-    button.addEventListener('click', () => selectOption(index, button));
-    optionsContainer.appendChild(button);
-  });
-
-  updateProgress();
-}
-
-function selectOption(selectedIndex, selectedButton) {
-  if (answered) return;
-
-  answered = true;
-  const currentQuestion = quizData[currentQuestionIndex];
-  const isCorrect = selectedIndex === currentQuestion.answer;
-
-  const allOptions = document.querySelectorAll('.option');
-
-  allOptions.forEach(btn => {
-    btn.classList.add('disabled');
-    btn.disabled = true;
-  });
-
-  if (isCorrect) {
-    selectedButton.classList.add('correct');
-    score++;
-    feedbackMessage.textContent = '✅ Resposta correta! Você é uma verdadeira boiadeira! 🤠';
-  } else {
-    selectedButton.classList.add('wrong');
-    feedbackMessage.textContent =
-      `❌ Resposta incorreta. A resposta certa é: ${currentQuestion.options[currentQuestion.answer]}`;
-
-    allOptions[currentQuestion.answer].classList.add('correct');
-  }
-
-  nextButton.disabled = false;
-}
-
-function nextQuestion() {
-  if (!answered) return;
-
-  currentQuestionIndex++;
-
-  if (currentQuestionIndex < quizData.length) {
-    loadQuestion();
-  } else {
-    showResult();
-  }
-}
-
-function showResult() {
-  quizArea.classList.add('hidden');
-  resultScreen.classList.remove('hidden');
-
-  const totalQuestions = quizData.length;
-  scoreText.textContent =
-    `Você acertou ${score} de ${totalQuestions} perguntas sobre Ana Castela! 🤠`;
-
-  progressBar.style.width = '100%';
-}
-
-function restartQuiz() {
-  currentQuestionIndex = 0;
-  score = 0;
-  answered = false;
-
-  resultScreen.classList.add('hidden');
-  quizArea.classList.remove('hidden');
-
-  progressBar.style.width = '0%';
-  loadQuestion();
-}
-
-// ============ FUNÇÕES DE TEMA ============
-
-function toggleTheme() {
-  document.body.classList.toggle('dark-theme');
-
-  const isDark = document.body.classList.contains('dark-theme');
-
-  themeIcon.textContent = isDark ? '☀️' : '🌙';
-
-  try {
-    localStorage.setItem(
-      'quizAnaCastela-theme',
-      isDark ? 'dark' : 'light'
-    );
-  } catch (e) {
-    // localStorage pode não estar disponível
-  }
-}
-
-function loadSavedTheme() {
-  try {
-    const savedTheme = localStorage.getItem('quizAnaCastela-theme');
-
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark-theme');
-      themeIcon.textContent = '☀️';
-    }
-  } catch (e) {
-    // Ignora erros de localStorage
-  }
-}
-
-// ============ EVENT LISTENERS ============
-
-nextButton.addEventListener('click', nextQuestion);
-restartButton.addEventListener('click', restartQuiz);
-themeToggle.addEventListener('click', toggleTheme);
-
-// ============ INICIALIZAÇÃO ============
-
-loadSavedTheme();
-loadQuestion();
