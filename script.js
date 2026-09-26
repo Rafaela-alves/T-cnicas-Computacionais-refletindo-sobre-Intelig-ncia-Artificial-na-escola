@@ -1,82 +1,82 @@
-// Banco de perguntas sobre IA na escola
+// Banco de perguntas sobre o Holocausto
 const quizData = [
   {
-    question: "O que significa a sigla 'IA'?",
+    question: "O que foi o Holocausto?",
     options: [
-      "Inteligência Analógica",
-      "Inteligência Artificial",
-      "Interação Automatizada",
-      "Informática Aplicada"
+      "Uma guerra entre países europeus no século XIX",
+      "O genocídio sistemático de judeus e outros grupos pelo regime nazista",
+      "Um tratado de paz assinado após a Primeira Guerra Mundial",
+      "Um movimento artístico do início do século XX"
     ],
     answer: 1
   },
   {
-    question: "Qual ferramenta de IA pode ajudar a criar resumos de textos escolares?",
+    question: "Em qual período histórico ocorreu o Holocausto?",
     options: [
-      "ChatGPT",
-      "Microsoft Word",
-      "Google Maps",
-      "Calculadora"
-    ],
-    answer: 0
-  },
-  {
-    question: "Na escola, a IA pode ser usada para:",
-    options: [
-      "Substituir completamente os professores",
-      "Criar atividades personalizadas para alunos",
-      "Impedir o acesso à internet",
-      "Corrigir provas sem critério algum"
+      "Durante a Primeira Guerra Mundial (1914-1918)",
+      "Durante a Segunda Guerra Mundial (1939-1945)",
+      "Durante a Guerra Fria (1947-1991)",
+      "Durante a Revolução Industrial (século XVIII)"
     ],
     answer: 1
   },
   {
-    question: "Qual dessas é uma preocupação ética no uso de IA na educação?",
+    question: "Qual regime político foi responsável pelo Holocausto?",
     options: [
-      "A IA deixar os alunos mais inteligentes",
-      "A privacidade dos dados dos estudantes",
-      "O excesso de lições de casa",
-      "A velocidade da internet"
+      "O regime comunista soviético",
+      "O regime nazista liderado por Adolf Hitler",
+      "O regime monárquico britânico",
+      "O regime fascista italiano"
     ],
     answer: 1
   },
   {
-    question: "O que é 'aprendizado de máquina' (machine learning)?",
+    question: "Além dos judeus, quais outros grupos foram perseguidos pelos nazistas?",
     options: [
-      "Um tipo de máquina de escrever moderna",
-      "Um ramo da IA que permite sistemas aprenderem com dados",
-      "Um jogo educativo",
-      "Um método de ensino tradicional"
+      "Apenas militares inimigos",
+      "Ciganos, homossexuais, pessoas com deficiência, eslavos e opositores políticos",
+      "Somente estrangeiros ricos",
+      "Apenas membros de partidos comunistas"
     ],
     answer: 1
   },
   {
-    question: "Como a IA pode auxiliar alunos com dificuldades de aprendizagem?",
+    question: "O que eram os guetos criados pelos nazistas?",
     options: [
-      "Oferecendo tutoria personalizada e adaptativa",
-      "Dando notas mais altas automaticamente",
-      "Fazendo a lição por eles",
-      "Ignorando suas necessidades"
+      "Campos de férias para crianças alemãs",
+      "Áreas isoladas onde judeus eram forçados a viver em condições precárias",
+      "Bairros luxuosos para oficiais nazistas",
+      "Escolas especiais para jovens alemães"
     ],
-    answer: 0
+    answer: 1
   },
   {
-    question: "Qual é um exemplo de IA generativa?",
+    question: "Qual foi o papel dos campos de concentração e extermínio?",
     options: [
-      "DALL-E (gerador de imagens)",
-      "Excel",
-      "Windows",
-      "Google Chrome"
+      "Serviam apenas como prisões para criminosos comuns",
+      "Eram locais de trabalho voluntário",
+      "Foram usados para aprisionar, explorar e assassinar milhões de pessoas",
+      "Eram hospitais militares para soldados feridos"
     ],
-    answer: 0
+    answer: 2
   },
   {
-    question: "O uso responsável da IA na escola envolve:",
+    question: "O que foi o 'Dia Internacional em Memória das Vítimas do Holocausto', lembrado em 27 de janeiro?",
     options: [
-      "Copiar respostas da IA sem citar",
-      "Usar como ferramenta de apoio, mantendo o pensamento crítico",
-      "Deixar a IA tomar todas as decisões",
-      "Proibir qualquer tecnologia"
+      "A data em que Hitler chegou ao poder",
+      "A data da libertação do campo de Auschwitz-Birkenau",
+      "A data do fim da Segunda Guerra Mundial",
+      "A data da fundação da ONU"
+    ],
+    answer: 1
+  },
+  {
+    question: "Por que é importante estudar e lembrar o Holocausto nos dias de hoje?",
+    options: [
+      "Para culpar os descendentes dos nazistas",
+      "Para evitar que o preconceito, o ódio e a intolerância se repitam",
+      "Apenas para cumprir uma exigência escolar",
+      "Para justificar novos conflitos entre nações"
     ],
     answer: 1
   }
@@ -206,7 +206,7 @@ function toggleTheme() {
   
   // Salvar preferência
   try {
-    localStorage.setItem('quizIA-theme', isDark ? 'dark' : 'light');
+    localStorage.setItem('quizHolocausto-theme', isDark ? 'dark' : 'light');
   } catch (e) {
     // localStorage pode não estar disponível
   }
@@ -214,7 +214,7 @@ function toggleTheme() {
 
 function loadSavedTheme() {
   try {
-    const savedTheme = localStorage.getItem('quizIA-theme');
+    const savedTheme = localStorage.getItem('quizHolocausto-theme');
     if (savedTheme === 'dark') {
       document.body.classList.add('dark-theme');
       themeIcon.textContent = '☀️';
