@@ -1,103 +1,236 @@
-// Banco de perguntas sobre o Holocausto
+// Banco de perguntas sobre IA na escola
 const quizData = [
   {
-    question: "Considerando o contexto político e social da Europa durante a ascensão do nazismo, qual alternativa melhor explica como o regime de Adolf Hitler conseguiu transformar o antissemitismo em uma política sistemática de perseguição?",
+    question: "O que significa a sigla 'IA'?",
     options: [
-      "Por meio de leis, propaganda estatal, exclusão social e medidas que retiravam progressivamente os direitos da população judaica",
-      "Apenas por meio de conflitos militares entre diferentes países europeus",
-      "Principalmente por meio de acordos econômicos estabelecidos com comunidades judaicas",
-      "Por meio de uma política que garantia igualdade jurídica entre todos os grupos étnicos"
+      "Inteligência Analógica",
+      "Inteligência Artificial",
+      "Interação Automatizada",
+      "Informática Aplicada"
     ],
-    answer: "Por meio de leis, propaganda estatal, exclusão social e medidas que retiravam progressivamente os direitos da população judaica"
+    answer: 1
   },
   {
-    question: "As Leis de Nuremberg, promulgadas em 1935 na Alemanha nazista, representaram uma importante etapa na perseguição aos judeus. Qual foi uma de suas principais consequências?",
+    question: "Qual ferramenta de IA pode ajudar a criar resumos de textos escolares?",
     options: [
-      "A ampliação dos direitos políticos da população judaica",
-      "A definição legal de categorias raciais e a retirada de diversos direitos dos judeus alemães",
-      "A criação de um sistema democrático para combater o antissemitismo",
-      "A concessão de cidadania plena a todas as minorias perseguidas"
+      "ChatGPT",
+      "Microsoft Word",
+      "Google Maps",
+      "Calculadora"
     ],
-    answer: "A definição legal de categorias raciais e a retirada de diversos direitos dos judeus alemães"
+    answer: 0
   },
   {
-    question: "A propaganda nazista teve um papel importante na consolidação do regime e na perseguição de grupos considerados inimigos. Qual era uma de suas principais funções no contexto do Holocausto?",
+    question: "Na escola, a IA pode ser usada para:",
     options: [
-      "Promover o pensamento crítico sobre as políticas do governo",
-      "Apresentar informações imparciais sobre as minorias europeias",
-      "Difundir ideias antissemitas e desumanizar determinados grupos para justificar sua perseguição",
-      "Defender a liberdade religiosa e cultural das populações perseguidas"
+      "Substituir completamente os professores",
+      "Criar atividades personalizadas para alunos",
+      "Impedir o acesso à internet",
+      "Corrigir provas sem critério algum"
     ],
-    answer: "Difundir ideias antissemitas e desumanizar determinados grupos para justificar sua perseguição"
+    answer: 1
   },
   {
-    question: "O que significa o termo 'Holocausto' no contexto da História do século XX?",
+    question: "Qual dessas é uma preocupação ética no uso de IA na educação?",
     options: [
-      "O período de reconstrução econômica da Europa após a Segunda Guerra Mundial",
-      "A perseguição e o assassinato sistemático de aproximadamente seis milhões de judeus pelos nazistas e seus colaboradores, além da perseguição de outros grupos",
-      "A divisão política da Alemanha após o fim da Segunda Guerra Mundial",
-      "A expansão territorial dos países aliados durante o conflito"
+      "A IA deixar os alunos mais inteligentes",
+      "A privacidade dos dados dos estudantes",
+      "O excesso de lições de casa",
+      "A velocidade da internet"
     ],
-    answer: "A perseguição e o assassinato sistemático de aproximadamente seis milhões de judeus pelos nazistas e seus colaboradores, além da perseguição de outros grupos"
+    answer: 1
   },
   {
-    question: "Os guetos estabelecidos pelos nazistas em diferentes territórios ocupados durante a Segunda Guerra Mundial tinham como uma de suas principais finalidades:",
+    question: "O que é 'aprendizado de máquina' (machine learning)?",
     options: [
-      "Oferecer novas oportunidades econômicas às comunidades judaicas",
-      "Concentrar e isolar populações judaicas, submetendo-as a condições extremamente precárias e facilitando posteriormente sua deportação",
-      "Criar regiões independentes administradas democraticamente pelos judeus",
-      "Proteger as comunidades judaicas de perseguições realizadas por outros países"
+      "Um tipo de máquina de escrever moderna",
+      "Um ramo da IA que permite sistemas aprenderem com dados",
+      "Um jogo educativo",
+      "Um método de ensino tradicional"
     ],
-    answer: "Concentrar e isolar populações judaicas, submetendo-as a condições extremamente precárias e facilitando posteriormente sua deportação"
+    answer: 1
   },
   {
-    question: "A chamada 'Solução Final' representou uma mudança decisiva na política nazista contra os judeus europeus. Historicamente, o termo se refere:",
+    question: "Como a IA pode auxiliar alunos com dificuldades de aprendizagem?",
     options: [
-      "Ao plano de reconstrução das cidades alemãs depois da guerra",
-      "À política de emigração voluntária de judeus para outros continentes",
-      "Ao projeto nazista de assassinato sistemático da população judaica da Europa",
-      "Ao acordo diplomático que encerrou a Segunda Guerra Mundial"
+      "Oferecendo tutoria personalizada e adaptativa",
+      "Dando notas mais altas automaticamente",
+      "Fazendo a lição por eles",
+      "Ignorando suas necessidades"
     ],
-    answer: "Ao projeto nazista de assassinato sistemático da população judaica da Europa"
+    answer: 0
   },
   {
-    question: "Os campos de concentração e os centros de extermínio desempenharam papéis diferentes dentro do sistema de perseguição nazista. Qual alternativa apresenta uma distinção historicamente adequada?",
+    question: "Qual é um exemplo de IA generativa?",
     options: [
-      "Os campos de concentração eram exclusivamente destinados a soldados aliados, enquanto os centros de extermínio eram prisões comuns",
-      "Os campos de concentração eram utilizados para aprisionamento e exploração de prisioneiros, enquanto centros de extermínio foram criados principalmente para realizar assassinatos em massa",
-      "Ambos tinham exatamente a mesma finalidade e funcionavam exclusivamente como campos militares",
-      "Os centros de extermínio foram criados pelos Aliados durante os últimos meses da guerra"
+      "DALL-E (gerador de imagens)",
+      "Excel",
+      "Windows",
+      "Google Chrome"
     ],
-    answer: "Os campos de concentração eram utilizados para aprisionamento e exploração de prisioneiros, enquanto centros de extermínio foram criados principalmente para realizar assassinatos em massa"
+    answer: 0
   },
   {
-    question: "Por que Auschwitz-Birkenau se tornou um dos principais símbolos históricos do Holocausto?",
+    question: "O uso responsável da IA na escola envolve:",
     options: [
-      "Porque foi o principal quartel-general militar dos Aliados durante a Segunda Guerra Mundial",
-      "Porque funcionou como parte do complexo de campos nazistas e tornou-se um dos locais mais conhecidos associados ao assassinato em massa de judeus e de outros prisioneiros",
-      "Porque foi o local onde ocorreu a assinatura do tratado que encerrou a guerra",
-      "Porque foi utilizado exclusivamente como hospital para soldados alemães"
+      "Copiar respostas da IA sem citar",
+      "Usar como ferramenta de apoio, mantendo o pensamento crítico",
+      "Deixar a IA tomar todas as decisões",
+      "Proibir qualquer tecnologia"
     ],
-    answer: "Porque funcionou como parte do complexo de campos nazistas e tornou-se um dos locais mais conhecidos associados ao assassinato em massa de judeus e de outros prisioneiros"
-  },
-  {
-    question: "Além dos judeus, diversos outros grupos foram perseguidos pelo regime nazista. Qual alternativa apresenta grupos que também foram alvo de perseguição e violência?",
-    options: [
-      "Somente militares britânicos e franceses",
-      "Roma e Sinti, pessoas com deficiência, prisioneiros políticos, homossexuais e outros grupos considerados inimigos ou indesejáveis pelo regime",
-      "Exclusivamente membros do Partido Nazista",
-      "Apenas comerciantes estrangeiros que viviam na Alemanha"
-    ],
-    answer: "Roma e Sinti, pessoas com deficiência, prisioneiros políticos, homossexuais e outros grupos considerados inimigos ou indesejáveis pelo regime"
-  },
-  {
-    question: "Ao estudar o Holocausto, por que os historiadores consideram importante analisar documentos, testemunhos de sobreviventes, fotografias e registros produzidos durante o período?",
-    options: [
-      "Porque essas fontes permitem compreender diferentes aspectos da perseguição e confrontar tentativas posteriores de negar ou distorcer acontecimentos historicamente documentados",
-      "Porque apenas fotografias podem ser consideradas fontes históricas confiáveis",
-      "Porque os testemunhos substituem completamente a análise de documentos oficiais",
-      "Porque esses materiais foram produzidos exclusivamente depois da guerra"
-    ],
-    answer: "Porque essas fontes permitem compreender diferentes aspectos da perseguição e confrontar tentativas posteriores de negar ou distorcer acontecimentos historicamente documentados"
+    answer: 1
   }
 ];
+
+// Variáveis de controle
+let currentQuestionIndex = 0;
+let score = 0;
+let answered = false;
+
+// Elementos do DOM
+const questionText = document.getElementById('questionText');
+const optionsContainer = document.getElementById('optionsContainer');
+const feedbackMessage = document.getElementById('feedbackMessage');
+const nextButton = document.getElementById('nextButton');
+const progressBar = document.getElementById('progressBar');
+const quizArea = document.getElementById('quizArea');
+const resultScreen = document.getElementById('resultScreen');
+const scoreText = document.getElementById('scoreText');
+const restartButton = document.getElementById('restartButton');
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = themeToggle.querySelector('.theme-icon');
+
+// ============ FUNÇÕES DO QUIZ ============
+
+function updateProgress() {
+  const progress = ((currentQuestionIndex + 1) / quizData.length) * 100;
+  progressBar.style.width = `${progress}%`;
+}
+
+function loadQuestion() {
+  answered = false;
+  nextButton.disabled = true;
+  feedbackMessage.textContent = '';
+
+  const currentQuestion = quizData[currentQuestionIndex];
+  questionText.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
+
+  optionsContainer.innerHTML = '';
+  const letters = ['A', 'B', 'C', 'D'];
+
+  currentQuestion.options.forEach((option, index) => {
+    const button = document.createElement('button');
+    button.classList.add('option');
+    button.setAttribute('data-index', index);
+    
+    button.innerHTML = `
+      <span class="option-letter">${letters[index]}</span>
+      <span>${option}</span>
+    `;
+
+    button.addEventListener('click', () => selectOption(index, button));
+    optionsContainer.appendChild(button);
+  });
+
+  updateProgress();
+}
+
+function selectOption(selectedIndex, selectedButton) {
+  if (answered) return;
+
+  answered = true;
+  const currentQuestion = quizData[currentQuestionIndex];
+  const isCorrect = selectedIndex === currentQuestion.answer;
+
+  const allOptions = document.querySelectorAll('.option');
+  allOptions.forEach(btn => {
+    btn.classList.add('disabled');
+    btn.disabled = true;
+  });
+
+  if (isCorrect) {
+    selectedButton.classList.add('correct');
+    score++;
+    feedbackMessage.textContent = '✅ Resposta correta! Muito bem!';
+  } else {
+    selectedButton.classList.add('wrong');
+    feedbackMessage.textContent = `❌ Resposta incorreta. A resposta certa é: ${currentQuestion.options[currentQuestion.answer]}`;
+    allOptions[currentQuestion.answer].classList.add('correct');
+  }
+
+  nextButton.disabled = false;
+}
+
+function nextQuestion() {
+  if (!answered) return;
+
+  currentQuestionIndex++;
+
+  if (currentQuestionIndex < quizData.length) {
+    loadQuestion();
+  } else {
+    showResult();
+  }
+}
+
+function showResult() {
+  quizArea.classList.add('hidden');
+  resultScreen.classList.remove('hidden');
+  
+  const totalQuestions = quizData.length;
+  scoreText.textContent = `Você acertou ${score} de ${totalQuestions} perguntas!`;
+
+  progressBar.style.width = '100%';
+}
+
+function restartQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
+  answered = false;
+
+  resultScreen.classList.add('hidden');
+  quizArea.classList.remove('hidden');
+
+  progressBar.style.width = '0%';
+  loadQuestion();
+}
+
+// ============ FUNÇÕES DE TEMA ============
+
+function toggleTheme() {
+  document.body.classList.toggle('dark-theme');
+  const isDark = document.body.classList.contains('dark-theme');
+  
+  // Atualizar ícone
+  themeIcon.textContent = isDark ? '☀️' : '🌙';
+  
+  // Salvar preferência
+  try {
+    localStorage.setItem('quizIA-theme', isDark ? 'dark' : 'light');
+  } catch (e) {
+    // localStorage pode não estar disponível
+  }
+}
+
+function loadSavedTheme() {
+  try {
+    const savedTheme = localStorage.getItem('quizIA-theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+      themeIcon.textContent = '☀️';
+    }
+  } catch (e) {
+    // Ignora erros de localStorage
+  }
+}
+
+// ============ EVENT LISTENERS ============
+
+nextButton.addEventListener('click', nextQuestion);
+restartButton.addEventListener('click', restartQuiz);
+themeToggle.addEventListener('click', toggleTheme);
+
+// ============ INICIALIZAÇÃO ============
+
+loadSavedTheme();
+loadQuestion();
