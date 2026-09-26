@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz - Holocausto</title>
+<style>
 * {
   margin: 0;
   padding: 0;
@@ -5,58 +12,58 @@
   font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
 }
 
-/* Variáveis de tema */
+/* Variáveis de tema - Paleta Holocausto (claro) */
 :root {
-  --bg-gradient-start: #1e3c72;
-  --bg-gradient-end: #2a5298;
-  --card-bg: #ffffff;
-  --text-primary: #1e2b4f;
-  --text-secondary: #5a6a85;
-  --border-light: #eef2f9;
-  --progress-bg: #e9eef5;
-  --option-bg: #f8fafd;
-  --option-border: #d9e2ef;
-  --option-hover-bg: #edf3fd;
-  --option-hover-border: #4b7bec;
-  --button-bg: #2a5298;
-  --button-hover: #1e3c72;
-  --button-disabled: #b0c4de;
-  --score-bg: #eef3fd;
-  --correct-bg: #d4edda;
-  --correct-border: #28a745;
-  --correct-text: #155724;
-  --wrong-bg: #f8d7da;
-  --wrong-border: #dc3545;
-  --wrong-text: #721c24;
-  --footer-bg: #1e2b4f;
-  --footer-text: #ffffff;
+  --bg-gradient-start: #3a3a3a;
+  --bg-gradient-end: #5c5c5c;
+  --card-bg: #f5f1e8;
+  --text-primary: #2b2b2b;
+  --text-secondary: #6b6b6b;
+  --border-light: #d6d3cc;
+  --progress-bg: #d6d3cc;
+  --option-bg: #ede8dd;
+  --option-border: #c9c2b3;
+  --option-hover-bg: #ddd6c5;
+  --option-hover-border: #8a8a8a;
+  --button-bg: #4a4a4a;
+  --button-hover: #2b2b2b;
+  --button-disabled: #b0b0b0;
+  --score-bg: #ede8dd;
+  --correct-bg: #d4e0c4;
+  --correct-border: #6b8e4e;
+  --correct-text: #2a3a1e;
+  --wrong-bg: #e8c8c8;
+  --wrong-border: #a04040;
+  --wrong-text: #4a1e1e;
+  --footer-bg: #2b2b2b;
+  --footer-text: #e8e6e0;
 }
 
 /* Tema escuro */
 body.dark-theme {
-  --bg-gradient-start: #0f172a;
-  --bg-gradient-end: #1e293b;
-  --card-bg: #1e293b;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --border-light: #334155;
-  --progress-bg: #334155;
-  --option-bg: #334155;
-  --option-border: #475569;
-  --option-hover-bg: #475569;
-  --option-hover-border: #60a5fa;
-  --button-bg: #3b82f6;
-  --button-hover: #2563eb;
-  --button-disabled: #64748b;
-  --score-bg: #334155;
-  --correct-bg: #14532d;
-  --correct-border: #22c55e;
-  --correct-text: #bbf7d0;
-  --wrong-bg: #7f1d1d;
-  --wrong-border: #ef4444;
-  --wrong-text: #fecaca;
-  --footer-bg: #0f172a;
-  --footer-text: #e2e8f0;
+  --bg-gradient-start: #0d0d0d;
+  --bg-gradient-end: #1a1a1a;
+  --card-bg: #1e1e1e;
+  --text-primary: #e8e6e0;
+  --text-secondary: #a0a0a0;
+  --border-light: #333333;
+  --progress-bg: #333333;
+  --option-bg: #2a2a2a;
+  --option-border: #444444;
+  --option-hover-bg: #3a3a3a;
+  --option-hover-border: #8a8a8a;
+  --button-bg: #3a3a3a;
+  --button-hover: #555555;
+  --button-disabled: #555555;
+  --score-bg: #2a2a2a;
+  --correct-bg: #2a3a1e;
+  --correct-border: #7a9e5a;
+  --correct-text: #d4e0c4;
+  --wrong-bg: #3a1e1e;
+  --wrong-border: #a04040;
+  --wrong-text: #e8c8c8;
+  --footer-bg: #0d0d0d;
+  --footer-text: #e8e6e0;
 }
 
 body {
@@ -124,6 +131,7 @@ header h1 {
   color: var(--text-primary);
   letter-spacing: -0.5px;
   margin-bottom: 6px;
+  font-family: Georgia, 'Times New Roman', serif;
   transition: color 0.3s ease;
 }
 
@@ -149,7 +157,7 @@ header p {
 .progress-bar {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #2a5298, #4b7bec);
+  background: linear-gradient(90deg, #6b6b6b, #a0a0a0);
   border-radius: 20px;
   transition: width 0.3s ease;
 }
@@ -225,14 +233,14 @@ header p {
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  color: #2a5298;
+  color: #4a4a4a;
   border: 1px solid var(--option-border);
   flex-shrink: 0;
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 body.dark-theme .option-letter {
-  color: #60a5fa;
+  color: #c0c0c0;
 }
 
 /* Feedback */
@@ -263,7 +271,7 @@ body.dark-theme .option-letter {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(42, 82, 152, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 280px;
 }
@@ -271,7 +279,7 @@ body.dark-theme .option-letter {
 #nextButton:hover:not(:disabled), #restartButton:hover {
   background: var(--button-hover);
   transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(42, 82, 152, 0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 #nextButton:disabled {
@@ -297,7 +305,7 @@ body.dark-theme .option-letter {
 #scoreText {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #2a5298;
+  color: #4a4a4a;
   margin: 20px 0 28px;
   background: var(--score-bg);
   padding: 18px;
@@ -306,7 +314,7 @@ body.dark-theme .option-letter {
 }
 
 body.dark-theme #scoreText {
-  color: #60a5fa;
+  color: #c0c0c0;
 }
 
 .hidden {
@@ -406,7 +414,6 @@ body.dark-theme #scoreText {
     font-size: 1.2rem;
   }
 
-  /* Footer vira horizontal no mobile */
   .contact-footer {
     position: fixed;
     top: auto;
@@ -430,3 +437,47 @@ body.dark-theme #scoreText {
     transform: translateY(-4px);
   }
 }
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+  <span class="theme-icon">🌙</span>
+</button>
+
+<div class="quiz-container">
+  <header>
+    <h1>🕯️ Quiz - Holocausto</h1>
+    <p>Memória, História e Reflexão</p>
+  </header>
+
+  <div class="progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <div id="quizArea">
+    <div class="question-container">
+      <p id="questionText"></p>
+    </div>
+    <div class="options" id="optionsContainer"></div>
+    <div class="feedback-area">
+      <p id="feedbackMessage"></p>
+      <button id="nextButton" disabled>Próxima</button>
+    </div>
+  </div>
+
+  <div id="resultScreen" class="result-screen hidden">
+    <h2>Quiz Concluído</h2>
+    <p id="scoreText"></p>
+    <button id="restartButton">Jogar Novamente</button>
+  </div>
+</div>
+
+<footer class="contact-footer">
+  <a href="#" class="contact-link whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.296c-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.148-.174.198-.298.297-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.886-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.002 5.45-4.437 9.884-9.883 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.412"/>
+    </svg>
+    <span class="contact-label">WhatsApp</span>
+  </a>
+  <a href="#" class="contact-link github" aria-label
